@@ -88,6 +88,22 @@
             font-size: 0.85rem;
         }
 
+	.header-logo {
+   		 height: 50px; /* Ajusta la altura según el diseño de tu logo */
+  	 	 width: auto;
+  	 	 margin-left: auto; /* Esto empuja el logo hacia el extremo derecho */
+   	 	 object-fit: contain;
+	}
+
+	/* Ajuste para que se vea bien en celulares */
+	@media (max-width: 600px) {
+   		 .header-logo {
+      		  margin-left: 0;
+      		  margin-top: 10px;
+       		  height: 40px;
+   	 }
+	}
+
         /* Contenedor Principal */
         .container {
             max-width: 1200px;
@@ -252,6 +268,8 @@
                 <h1>Panel de Control Corporativo</h1>
                 <p>Seleccione un módulo para visualizar los indicadores clave</p>
             </div>
+
+	    <img src="logo.png" alt="Logo Empresa" class="header-logo">
         </div>
     </header>
 
